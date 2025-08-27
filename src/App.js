@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import NavBar from "./components/NavBar";
 import TextForm from "./components/TextForm";
-import About from "./components/About";
-import { Routes, Route, Link } from "react-router-dom";
+// import About from "./components/About";
+// import { Routes, Route, Link } from "react-router-dom"; 
 
 function App() {
   const [activeTheme, setActiveTheme] = useState("dark3");
@@ -22,10 +22,11 @@ function App() {
     <>
       <NavBar title="TextUtils" changeTheme={changeTheme} themes={themes} activeTheme={activeTheme} />
       <div className="container my-4">
-        <Routes>
-          <Route path="/" element={<TextForm />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <TextForm />
+        {/* <Routes> */}
+          {/* <Route path="/" element={<TextForm />} /> */}
+          {/* <Route path="/about" element={<About />} /> */}
+        {/* </Routes> */}
       </div>
     </>
   );
