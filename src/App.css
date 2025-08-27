@@ -1,0 +1,76 @@
+.btn {
+    margin-right: 2rem;
+}
+
+#root {
+    background-color: #212529;
+    color: white;
+}
+
+/* #root.light-theme {
+    background-color: aliceblue;
+    color: black;
+}
+
+#root.light-theme #searchInp::placeholder {
+    color: black;
+} */
+
+.themeBoxColor {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border: 1px solid white;
+}
+
+.themeBoxColor:hover {
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 2px solid white;
+}
+
+.themeSwitcherCon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#searchInp {
+    width: 10rem;
+}
+
+#root[data-theme="light"] {
+    background: #f8fafc;
+    color: #0f172a;
+}
+#root[data-theme="light"] .navElement{
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+#root[data-theme="light"] #searchInp::placeholder {
+    color: black;
+}
+#root[data-theme="light"] .activeThemeBox{
+    border: 2px solid black;
+}
+#root[data-theme="dark"] {
+  background: #0f172a;
+  color: #f8fafc;
+}
+#root[data-theme="dark2"] {
+  background: #121212;
+  color: #f8fafc;
+}
+#root[data-theme="dark3"] {
+  background: #212529;
+  color: #f8fafc;
+}
+
+.activeThemeBox{
+    border-width: 2px;
+    height: 2.2rem;
+    width: 2.2rem;
+}
